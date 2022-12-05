@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic-fed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---------------------- HEADER ---------------------->
+    <div class="header">
+        <a class="logo">Basic FED</a>
+        <div class="header-right">
+            <img 
+            id="shopping-cart-modal"
+            src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-svg-png-icon-download-28.png" 
+            alt="shopping cart svg png icon download" />
+        </div>
+      </div>
+
+    <!---------------------- CAROUSEL ---------------------->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img 
+            src="https://cdn.runningshoesguru.com/wp-content/uploads/2020/09/Nike-Air-Zoom-Winflo-7-Medial-Side.jpg" 
+            alt="shoes slide 1"/>
+            <div class="slide-caption">
+                <h4 style="color: white;">
+                    Nike Winflo
+                </h4>
+                <p style="color: white;">
+                    If running is a daily habit, you need support to 
+                    match your speed. The Nike Winflo 8 brings back the
+                    cushioning you love and pairs it with details like a 
+                    translucent upper and Flywire technology for a snug, 
+                    stable fit for long road runs.
+                </p>
+            </div>
+        </div>
+    
+        <div class="mySlides">
+            <img 
+            src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F6%2Ffiles%2F2017%2F05%2Fadidas-adilette-slide-white-green-1.jpg?q=75&w=800&cbr=1&fit=max" 
+            alt="shoes slide 2"/>
+            <div class="slide-caption">
+                <h4>
+                    Stan Smith Slip-on White/Green
+                </h4>
+                <p>
+                    The mule take on the classic footwear style is now 
+                    being done in the signature “White/Green-Off White” 
+                    colorway. Expressing clean court style, the shoe features 
+                    a backless premium white smooth leather upper accented by
+                     white eyelets, matching laces, stitching design and perforated 
+                     Three Stripes branding.
+                </p>
+            </div>
+        </div>
+    
+        <div class="mySlides">
+            <img 
+            src="https://sneakernews.com/wp-content/uploads/2022/07/nike-air-force-1-low-jewel-double-swoosh-dz5616-100-4.jpg" 
+            alt="shoes slide 3">
+            <div class="slide-caption">
+                <h4>
+                    A Classic Since 1982
+                </h4>
+                <p>
+                    Designed by Bruce Kilgore and introduced in 1982, 
+                    the Air Force 1 was the first ever basketball shoe to feature
+                     Nike Air technology, revolutionizing the game and sneaker culture 
+                     forever. Over three decades since its first release, the Air Force 
+                     1 remains true to its roots while earning its status 
+                    as a fashion staple for seasons to come.
+                </p>
+            </div>
+        </div>
+    
+        <!------------------------ Next and previous buttons ----------------->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+    
+        <!--------------------------- The dots/circles ----------------------->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    </div>
+
+    <!---------------------- PRODUCTS ---------------------->
+    <div class="card" id="product-content">
+        <div class="price" id="model-price"></div>
+    </div>
+
+    <!---------------------- MODAL ---------------------->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1 class="cartWord">Cart</h1>
+            <label class="totalItem">Total Items: <label id="totalItem">0</label></label>
+            <div class="cart" id="cart">
+                
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- FOOTER ---------------------->
+    <div class="footer">
+        <h3><b>Christian Josh Cruz</b></h3>
+        <p>&#169; Copyright 2022 FED Basic Assessment.</p>
+    </div>
+
+    <!---------------------- SCRIPT ---------------------->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,516 @@
+body
+{
+    margin: auto;
+}
+.header 
+{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    z-index:99;
+}
+
+.header a 
+{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.header a.logo
+{
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    padding-top: 35px;
+    padding-top: 35px;
+    padding-left: 15px;
+}
+  
+.header-right
+{
+    float: right;
+}
+
+.header-right img
+{
+    width: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*---------------------------------- MODAL-STYLES------------------------------- */
+.modal 
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content 
+  {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+/*------------------------------- CAROUSEL-STYLES ---------------------*/
+
+  * {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container 
+{
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+
+}
+
+/* Hide the images by default */
+.mySlides 
+{
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.8s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover 
+{
+  background-color: black;
+  color: white;
+}
+
+/* Caption text */
+.slide-caption 
+{
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    color: black;
+    padding-bottom: 80px;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    width: 50%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.slide-caption h4
+{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+/* The dots/bullets/indicators */
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.mySlides img
+{
+    width: 100%;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* ----------------------PRODUCTS STYLES------------------------ */
+.product-div
+{
+    margin-top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: max-content;
+}
+
+.card
+{
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img
+{
+    border-radius: 30px;
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+}
+
+.card h4
+{
+    margin-top: -1px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card h3
+{
+    margin-top: -30px;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    margin-bottom: -25px;
+}
+
+.card button
+{
+    cursor: pointer;
+    width: auto;
+    background-color: black;
+    padding: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    transition: 0.6s ease;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+
+.card button:hover
+{
+    cursor: pointer;
+    width: auto;
+    background-color: white;
+    padding: 4px;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 30px;
+}
+
+.row
+{
+    display: flex; 
+}
+
+.cart
+{
+  padding: 10px;
+  margin: 5px;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart img
+{
+  border-radius: 30px;
+  width: 200px;
+  height: 130px;
+  padding: 5px;
+}
+
+.cart h4
+{
+  margin-top: -1px;
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cart h1
+{
+  font-size: 30px;
+}
+
+.modal-content h3
+{
+  margin-top: -25px;
+  font-size: 13px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.totalItem
+{
+  font-size: 17px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.empty h4
+{
+  margin-top: -1px;
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*---------------FOOTER------------------*/
+.footer 
+{
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  color: black;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  z-index:99;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer p
+{
+  font-size: 13px;
+}
+
+
+/*---------------REPONSIVENESS------------------*/
+
+@media screen and (max-width: 600px) 
+{ 
+  .footer 
+  {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: red;
+    color: white;
+    color: black;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .footer p
+  {
+    font-size: 10px;
+  }
+
+  .header
+  {
+    z-index:99;
+    position: absolute;
+    height: 75px;
+  }
+
+  .header a 
+  {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .logo
+  {
+    margin-top: -28px;
+  }
+
+  .slideshow-container
+  {
+    padding-top: 70px;
+  }
+
+  .header a.logo
+  {
+      font-size: 25px;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      letter-spacing: 2px;
+      text-align: center;
+  }
+
+  .header-right img
+  {
+    margin-top: -33px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8%;
+  }
+
+  .header-right 
+  {
+    float: center;
+  }
+
+  .slide-caption 
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    color: white;
+    font-size: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+    position: absolute;
+    bottom: 8px;
+    text-align: center;
+    width: 50%;
+    border-radius: 10px;
+    opacity: 0.8;
+    background-color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  }
+
+  .slide-caption h4
+  {
+      text-align: center;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+  }
+
+  .prev, .next 
+  {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
+
+  .prev:hover, .next:hover 
+  {
+  background-color: black;
+  color: white;
+  }
+
+  .dot 
+  {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover 
+  {
+  background-color: #717171;
+  }
+
+  .product-div
+  {
+      margin-top: 200%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: max-content;
+  }
+
+  .card 
+  {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+  }
+
+  .card img
+  {
+      border-radius: 30px;
+      width: 250px;
+      padding: 5px;
+  }
+
+  .row
+  {
+      display: block; 
+  }
+}
